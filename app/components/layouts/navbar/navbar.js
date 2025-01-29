@@ -14,7 +14,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             <Image 
               src={'/logoApp.svg'}
-              alt="Logo" 
+              alt="Logosasa" 
               width={100} 
               height={100} 
               className="object-contain"
