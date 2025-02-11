@@ -1,10 +1,10 @@
 "use client";
-
+import db from "@/app/context/firebaseConfig";
 import { Suspense, useContext, useEffect, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import ProductCard from "./ProductCard";
 
-const ProductListClient = ({ categoria }) => {
+const ProductsListClient = ({ categoria }) => {
     const { getProducts } = useContext(CartContext);
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -12,6 +12,7 @@ const ProductListClient = ({ categoria }) => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
+                
                 const allProducts = await getProducts();
                 const filteredProducts = allProducts.filter(
                     (product) => product.categoria === categoria
@@ -47,4 +48,4 @@ const ProductListClient = ({ categoria }) => {
     );
 };
 
-export default ProductListClient;
+export default ProductsListClient;

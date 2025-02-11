@@ -21,12 +21,9 @@ export default function Contacto() {
 
     return (
         <main className="p-6 max-w-md mx-auto">
-            <h1 className="text-3xl font-bold mb-4 text-center">Contacto</h1>
+            <h1 className="text-3xl font-bold mb-4 text-center">Ingresar</h1>
             <form className="space-y-4" onSubmit={submitForm}>
-                <div>
-                    <label htmlFor="name" className="block text-lg font-medium">Nombre:</label>
-                    <input type="text" id="name" name="name" required className="mt-1 block w-full border border-gray-300 rounded-md p-2 text-black" />
-                </div>
+                
                 <div>
                     <label htmlFor="email" className="block text-lg font-medium">Correo Electrónico:</label>
                     <input type="email" id="email" name="email" required className="mt-1 block w-full border border-gray-300 rounded-md p-2 text-black" />
@@ -52,11 +49,11 @@ export default function Contacto() {
                 </button>
             </form>
             <div className="flex items-center p-2 rounded-md mt-4">
-            
+
                 <Image 
                     src="/imgoogle.png" 
                     alt="Google" 
-                    width={100} 
+                    width={50} 
                     height={100} 
                     className="object-contain"
                 />
