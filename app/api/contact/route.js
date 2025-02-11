@@ -6,3 +6,6 @@ export async function POST(request) {
     const message = formData.message;
     return NextResponse.json({ message: `Hello, world! ${name} ${message}` });
 }
+
+
+
